@@ -12,7 +12,6 @@ $color-grey-dark-2: #6d5d4b;
 
 $main-background-color: rgb(255 255 255 / 1);
 
-
 *,
 *::before,
 *::after {
@@ -31,3 +30,52 @@ body {
   line-height: 1.6;
 }
 
+//changing scroll bar for the app
+body::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50%;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: green;
+  outline: 1px solid rgb(161, 86, 16);
+}
+
+.test {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  --transform-translate-x: -50%;
+  opacity: 0.3;
+  left: calc(50% + 3rem);
+  width: 36.125rem;
+
+  @media (min-width: 640px) {
+    left: calc(50% + 36rem);
+    width: 72.1875rem;
+  }
+}
+
+.tree-icon::before {
+  content: "\1F332";
+}
+
+.icon-write::before {
+  content: "\1F332";
+  color: green;
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+
+.herb-icon {
+  content: "\1F33F";
+}
+
+.herb-icon::before {
+  content: "\1F33F";
+  color: green;
+  font-size: 72px;
+  margin-bottom: 24px;
+}
