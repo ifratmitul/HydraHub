@@ -1,6 +1,6 @@
 import SkillHome from "@/modules/skill/skill-home";
 import { ArrowDownIcon } from "@heroicons/react/24/outline";
-import Footer from "./Footer";
+import TopProject from "@/modules/project/TopProject";
 
 export default function Hero() {
   return (
@@ -31,6 +31,7 @@ export default function Hero() {
       </div>
     </div>
     <SkillHome />
+    <TopProject />
     </div>
   );
 }
