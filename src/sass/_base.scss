@@ -22,6 +22,7 @@ $main-background-color: rgb(255 255 255 / 1);
 
 html {
   box-sizing: border-box;
+  color-scheme: white !important;
 }
 
 body {
@@ -41,22 +42,10 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.332);
+  border-radius: 7px;
   outline: 1px solid rgb(161, 86, 16);
 }
-
-// .test {
-//   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-//   --transform-translate-x: -50%;
-//   opacity: 0.3;
-//   left: calc(50% + 3rem);
-//   width: 36.125rem;
-
-//   @media (min-width: 640px) {
-//     left: calc(50% + 36rem);
-//     width: 72.1875rem;
-//   }
-// }
 
 .tree-icon::before {
   content: "\1F332";

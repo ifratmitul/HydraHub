@@ -50,14 +50,6 @@ export default function SkillHome() {
             width={158}
             height={48}
           />
-
-          <Image
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src={javaLogo}
-            alt="Statamic"
-            width={158}
-            height={48}
-          />
         </div>
       </div>
     </div>
