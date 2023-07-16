@@ -12,7 +12,6 @@ $color-grey-dark-2: #6d5d4b;
 
 $main-background-color: rgb(255 255 255 / 1);
 
-
 *,
 *::before,
 *::after {
@@ -23,6 +22,7 @@ $main-background-color: rgb(255 255 255 / 1);
 
 html {
   box-sizing: border-box;
+  color-scheme: white !important;
 }
 
 body {
@@ -31,3 +31,40 @@ body {
   line-height: 1.6;
 }
 
+//changing scroll bar for the app
+body::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50%;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 128, 0, 0.332);
+  border-radius: 7px;
+  outline: 1px solid rgb(161, 86, 16);
+}
+
+.tree-icon::before {
+  content: "\1F332";
+}
+
+.icon-write::before {
+  content: "\1F332";
+  color: green;
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+
+.herb-icon {
+  content: "\1F33F";
+}
+
+.herb-icon::before {
+  content: "\1F33F";
+  color: green;
+  font-size: 72px;
+  margin-bottom: 24px;
+}
